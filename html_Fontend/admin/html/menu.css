@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background-color: #343a40;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar .nav-link {
+    color: #fff;
+}
+.sidebar .nav-link.active {
+    background-color: #007bff;
+}
+.sidebar .profile {
+    margin-top: auto;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}

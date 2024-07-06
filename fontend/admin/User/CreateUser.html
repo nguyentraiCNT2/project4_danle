@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link href="/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/table-data.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="/js/included.js"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="d-flex">
+        <div id="menu"></div>
+        <div class="flex-grow-1 p-3">
+            <div class="container mt-5">
+                <h1 class="mb-4">Add User</h1>
+                <a href="./UserList.html" class="text-decoration-none"> <i class="fa-solid fa-arrow-left"></i> Quay lại danh sách</a>
+                <br/>
+                <br/>
+                <form id="addUserForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">User Name</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="username" class="form-label">last Name</label>
+                        <input type="text" class="form-control" id="lastname" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">firt Name</label>
+                        <input type="text" class="form-control" id="firtname" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="text" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="role" class="form-label">Role</label>
+                        <select class="form-select" id="role" required>
+                            <option value="">Select role</option>
+                            <option value="1">Admin</option>
+                            <option value="2">User</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="role" class="form-label">Status</label>
+                        <select class="form-select" id="status" required>
+                            <option value="">Select status</option>
+                            <option value="true">Active</option>
+                            <option value="false">Unactive</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="role" class="form-label">gender</label>
+                        <select class="form-select" id="gender" required>
+                            <option value="">Select gender</option>
+                            <option value="true">Nam</option>
+                            <option value="false">Nữ</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <script src="/js/addUser.js"></script>
+</body>
+
+</html>
